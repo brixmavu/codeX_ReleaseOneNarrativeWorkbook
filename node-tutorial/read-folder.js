@@ -10,7 +10,7 @@ var productList = [];
 files.forEach(function(fileName) { //finding files in the folder, for each looping
 
    var fileContent = fs.readFileSync(folderName + '/' + fileName, 'utf8');//returning conent file name; 
-   var products = fileContent.split("\n")
+   var products = fileContent.split("\n");
    products.forEach(function (product) {
    	// pushing product in .txt file productList Array
    	productList.push(product);
